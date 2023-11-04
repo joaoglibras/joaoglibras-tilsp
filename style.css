@@ -28,9 +28,6 @@ a {text-decoration: none;}
 .botao:hover {background-color: #122f66;}
 .section-servicos > .botao:hover{background-color: #173c80;}
 
-
-
-
 .botao {
     background-color: #173c80;
     display: flex;
