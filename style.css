@@ -8,17 +8,10 @@
 }
 body {background-color: #222;}
 
-.section-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    margin: auto;
-}
-img {width: 100%;}
-
+/* Textos */
 h1 {
     font-size: 2.3em;
+    width: max-content;
 }
 h2{
     text-align: center;
@@ -27,28 +20,99 @@ h2{
 }
 p {margin-top: 0.5em;}
 a {text-decoration: none;}
-.botao:hover {background-color: #122f66;}
-.section-servicos > .botao:hover{background-color: #173c80;}
+ul {margin-left: 2em;}
+li {margin-top: 0.5em;}
 
+/* Sections */
+.section-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: auto;
+}
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-title img {width: 100%;}
+
+/* Botão */
 .botao {
     background-color: #173c80;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    max-width: 300px;
     padding: 10px 0;
     margin: 5px auto;
     border-radius: 5px;
 }
-
 .botao img {
     width: 30px;
     margin-right: 3px;
 }
 
-ul {
-    margin-left: 2em;
+/* Footer */
+footer {
+    background-color: #173c80;
+    text-align: center;
+    margin-top: 2em;
+    padding: 3px 0;
+    font-size: 0.9em;
 }
-li {
-    margin-top: 0.5em;
+footer a:hover {text-decoration: underline;}
+
+
+
+/* Desktop */
+@media(hover: hover){
+    .botao:hover {background-color: #122f66;}
+    .section-servicos > .botao:hover{background-color: #173c80;}
+}
+@media(min-width:800px){
+    body {
+        background-color: rgb(194, 108, 9);
+        height: 100dvh;
+    }
+    .section-principal {
+        background-color: #222;
+        min-width: 750px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.479);
+    }
+    .section-title img {
+        width: 60%;
+    }
+    .bloco {
+        margin-top: 3em;
+        display: flex;
+        height: 320px;
+    }
+    .bloco1{
+        margin-right: 3em;
+    }
+    .botao {width: 300px;}
+    .bloco .botao{
+        margin-top: 6px;
+        padding: 14px 0;
+    }
+    .blocao {
+        display: grid;
+        height: 92dvh;
+    }
+    footer {
+        background-color: #00000000;
+    }
+}
+
+/* 2k resolution */
+@media(min-width:1400px){
+    .section-principal {
+        min-height: 60vh;
+        min-width: 40vw;
+        justify-content: center;
+    }
 }
