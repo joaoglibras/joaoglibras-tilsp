@@ -101,18 +101,10 @@ footer a:hover {text-decoration: underline;}
     }
     .blocao {
         display: grid;
-        height: 92dvh;
+        height: 94dvh;
     }
     footer {
         background-color: #00000000;
-    }
-}
-
-/* 2k resolution */
-@media(min-width:1400px){
-    .section-principal {
-        min-height: 60vh;
-        min-width: 40vw;
-        justify-content: center;
+        padding: 0px;
     }
 }
