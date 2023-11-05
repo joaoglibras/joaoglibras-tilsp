@@ -73,7 +73,6 @@ footer a:hover {text-decoration: underline;}
 }
 @media(min-width:800px){
     body {
-        background-color: rgb(194, 108, 9);
         height: 100dvh;
     }
     .section-principal {
@@ -81,13 +80,12 @@ footer a:hover {text-decoration: underline;}
         min-width: 750px;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.479);
     }
     .section-title img {
         width: 60%;
     }
     .bloco {
-        margin-top: 3em;
+        margin-top: 1em;
         display: flex;
         height: 320px;
     }
