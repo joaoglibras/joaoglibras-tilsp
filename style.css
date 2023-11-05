@@ -71,15 +71,12 @@ footer a:hover {text-decoration: underline;}
     .botao:hover {background-color: #122f66;}
     .section-servicos > .botao:hover{background-color: #173c80;}
 }
-@media(min-width:800px){
+@media(min-width:670px){
     body {
         height: 100dvh;
     }
     .section-principal {
-        background-color: #222;
-        min-width: 750px;
-        padding: 20px;
-        border-radius: 10px;
+        min-width: 650px;
     }
     .section-title img {
         width: 60%;
